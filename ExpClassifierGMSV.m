@@ -3,9 +3,9 @@ classdef ExpClassifierGMSV < ExpClassifier
     properties
         miner;
         baseLearner;
-        threshold;
-        min_sup;
-        num_features;
+        threshold = 0.5;
+        min_sup = 50;
+        num_features = 100;
     end
     
     methods
