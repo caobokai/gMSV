@@ -1,12 +1,12 @@
 classdef ExpDatasetSYN < ExpDataset
     
     methods
-       function s = ExpDatasetSYN()
+        function s = ExpDatasetSYN()
             s = s@ExpDataset('Synthetic', 'brain networks');
-       end
+        end
        
-       function [train_data, train_label, test_data, test_label] = load(...
-               varargin)
+        function [train_data, train_label, test_data, test_label] = load(...
+                varargin)
             num_samples = randi(100);
             num_nodes = randi([50, 100]);
             for i = 1 : num_samples
